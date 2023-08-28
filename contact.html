@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact - Laboratory Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/theme.js"></script>
+</head>
+<body>
+	<div id="header">
+		<p class="thememode"><button onclick="theme_setlight()">Light Mode</button> | <button onclick="theme_setdark()">Dark Mode</button></p>
+		<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+		<ul>
+			<li>
+				<a href="index.html">header1</a>
+			</li>
+			<li>
+				<a href="about.html">header2</a>
+			</li>
+			<li>
+				<a href="services.html">header3</a>
+			</li>
+			<li class="selected">
+				<a href="contact.html">header4</a>
+			</li>
+			<li>
+				<a href="login.html">header5</a>
+			</li>
+			<li>
+				<a href="appointment.html">header6</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<div class="content">
+			<img src="images/telephone.jpg" alt="">
+			<h2>trimite-ne un mesaj</h2>
+			<form action="http://localhost:8080/cabinetmedicalarges/php/contact.php" method="post">
+				<label for="firstName"> <span>Nume*</span>
+					<input type="text" name="first" id="firstName">
+				</label>
+				<label for="lastName"> <span>Prenume*</span>
+					<input type="text" name="last" id="lastName">
+				</label>
+				<label for="email"> <span>email*</span>
+					<input type="text" name="email" id="email">
+				</label>
+				<label for="phoneNumber"> <span>Numar telefon</span>
+					<input type="text" name="phone" id="phoneNumber">
+				</label>
+				<label for="subject"> <span>Subiect*</span>
+					<input type="text" name="subject" id="subject" maxlength="50">
+				</label>
+				<label for="message"> <span>Mesaj</span>
+					<textarea name="message" id="message" cols="30" rows="10" maxlength="300"></textarea>
+				</label>
+				<input type="submit" value="" id="submit">
+			</form>
+			<br>
+			<a href="http://localhost:8080/cabinetmedicalarges/php/view.php"><img src="images/button-view.png"></a>
+		</div>
+		<div class="sidebar">
+			contact_info
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>
+				footer_info
+			</p>
+			<ul>
+				<li id="facebook">
+					<a href="#">facebook</a>
+				</li>
+				<li id="twitter">
+					<a href="#">twitter</a>
+				</li>
+				<li id="googleplus">
+					<a href="#">googleplus</a>
+				</li>
+				<li id="rss">
+					<a href="#" >rss</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/changeinfo.js"></script>
+</body>
+</html>
